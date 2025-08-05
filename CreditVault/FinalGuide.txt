@@ -1,0 +1,40 @@
+🧑‍💻 How to Use the Program (Local Development)
+🔧 Requirements
+PHP (7.4 or above)
+
+MySQL server
+
+Apache or local server like XAMPP/Laragon
+
+VS Code (optional)
+
+📦 Setup Guide
+Extract Files
+Place the CreditVault folder inside your local server directory (e.g., htdocs for XAMPP).
+
+Create Database
+
+Open MySQL (phpMyAdmin or CLI).
+
+Run the contents of credit_vault_schema.sql to create the necessary tables.
+
+Configure DB Connection
+
+Open db.php and adjust:
+
+php
+Copy
+Edit
+$servername = "localhost";
+$username = "your_username";
+$password = "your_password";
+$dbname = "credit_vault";
+Test using test_connection.php.
+
+Launch the App
+
+Navigate to http://localhost/CreditVault/index.php in your browser.
+
+Login or create new user depending on implementation.
+
+Use the dashboard to add/view cards.
