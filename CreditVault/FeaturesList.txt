@@ -1,0 +1,48 @@
+📁 Key Files and Their Roles
+File	Description
+index.php	Main entry point – likely the homepage or login redirect.
+login.html, login.php	Frontend and backend for user authentication.
+logout.php	Handles user logout and session clearing.
+dashboard.html, dashboard.php	Displays the user interface for accessing stored cards.
+insert_card.php	Handles the input of new card details into the system.
+view_cards.php	Displays stored credit card details for the user.
+db.php	Establishes a connection with the database.
+test_connection.php	Tests if the database connection is working.
+credit_vault_schema.sql	SQL schema for setting up the required database tables.
+main.js	JavaScript file likely for form interactivity or encryption.
+style.css	Visual styling for the interface.
+launch.json, .code-workspace	VS Code workspace config files – not essential for runtime.
+APT3090_RSA_Credit_Vault_Report.docx	Likely a project documentation file (will analyze next).
+
+💡 Key Features Identified
+User Authentication
+
+Login system implemented in login.html and login.php.
+
+Basic session control likely handled in logout.php and index.php.
+
+Dashboard View
+
+dashboard.php presents users with an interface to access their stored cards.
+
+Insert & View Credit Cards
+
+insert_card.php is used to input card data.
+
+view_cards.php displays card records (likely decrypting them before display).
+
+Database Backend
+
+db.php handles DB connection.
+
+Schema in credit_vault_schema.sql defines tables (likely includes encrypted card fields).
+
+Security
+
+Based on the name of the report and file structure, it appears to use RSA cryptography to store credit card info securely.
+
+Possibly encrypts credit card details before storing and decrypts when viewing.
+
+Frontend Integration
+
+style.css and main.js offer a basic user experience enhancement for forms and buttons.
